@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Vaishnavi! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="heart-loader"></div>
+    </div>
+
+    <!-- Music Control -->
+    <button id="music-btn" class="hidden">
+        <span class="music-icon">🎵</span>
+    </button>
+    
+    <audio id="bg-music" loop>
+        <source src="natachi.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SECTION 1: Magical Welcome Screen -->
+    <section id="welcome-screen" class="section">
+        <div class="welcome-content">
+            <h1 class="glow-text">Happy Birthday, Vaishnavi! 🎂</h1>
+            <p class="subtitle">A little surprise, made with lots of love, just for you ❤️</p>
+            <div class="gift-box" id="open-gift-btn">
+                <div class="gift-lid"></div>
+                <div class="gift-body">
+                    <div class="gift-ribbon-v"></div>
+                    <div class="gift-ribbon-h"></div>
+                </div>
+            </div>
+            <button id="open-btn" class="primary-btn">Open Your Surprise 🎁</button>
+        </div>
+        <div class="floating-hearts" id="welcome-hearts"></div>
+    </section>
+
+    <!-- MAIN CONTENT (Hidden initially) -->
+    <main id="main-content" class="hidden">
+        <!-- SECTION 3: Birthday Hero Section -->
+        <section id="hero" class="section reveal">
+            <h2 class="dancing-text">Happy Birthday, My Dear Vaishnavi! ❤️</h2>
+            <p class="hero-subtitle">Today is all about celebrating the beautiful soul you are.</p>
+            <div class="cake-illustration">
+                <div class="cake-tier top"></div>
+                <div class="cake-tier middle"></div>
+                <div class="cake-tier bottom"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Beautiful Memories Gallery -->
+        <section id="gallery" class="section reveal">
+            <h2 class="section-title">Beautiful Memories ✨</h2>
+            <div class="gallery-grid">
+                <div class="memory-card">
+                    <div class="img-wrapper">
+                        <img src="IMG_20261004_203059.jpg" alt="Vaishnavi Memory 1" class="gallery-img">
+                    </div>
+                    <p class="caption">Your Smile Makes Everything Brighter ❤️</p>
+                </div>
+                <div class="memory-card">
+                    <div class="img-wrapper">
+                        <img src="IMG_20261004_203112.jpg" alt="Vaishnavi Memory 2" class="gallery-img">
+                    </div>
+                    <p class="caption">A Beautiful Soul, Inside and Out ✨</p>
+                </div>
+                <div class="memory-card">
+                    <div class="img-wrapper">
+                        <img src="IMG_20261004_203123.jpg" alt="Vaishnavi Memory 3" class="gallery-img">
+                    </div>
+                    <p class="caption">Forever My Special Person 💖</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: A Heartfelt Birthday Message -->
+        <section id="message" class="section reveal">
+            <div class="glass-card">
+                <h2 class="section-title">To My Dearest Vaishnavi 💌</h2>
+                <div class="typewriter-container">
+                    <p id="typed-message"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: Interactive Birthday Wishes -->
+        <section id="interactive-wish" class="section reveal">
+            <h2 class="section-title">Make a Birthday Wish! ✨</h2>
+            <div class="interactive-cake">
+                <div class="cake-tier top"></div>
+                <div class="cake-tier middle"></div>
+                <div class="cake-tier bottom"></div>
+                <div class="candles" id="wish-candles">
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                    <div class="candle"><div class="flame"></div></div>
+                </div>
+            </div>
+            <button id="blow-candles-btn" class="primary-btn">Blow the Candles 🎂</button>
+            <p id="wish-text" class="hidden">May all your wishes come true! ✨</p>
+        </section>
+
+        <!-- SECTION 7: Final Birthday Surprise -->
+        <section id="final-surprise" class="section reveal">
+            <div class="glass-card text-center">
+                <h2 class="dancing-text final-heading">Happy Birthday, Vaishnavi! ❤️🎂</h2>
+                <p class="final-text">You deserve all the happiness in this world. Keep smiling!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Memory">
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
